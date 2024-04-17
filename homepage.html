@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Page Title Here</title>
 </head>
-<body>
+
+<body class="home-body">
 
     
-    <div>
-    <div class="wave"></div>
-    <div class="wave"></div>
-    <div class="wave"></div>
+    <div class="wave-section">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
     </div>
 
-    <header>
+
+    <header class="header-section">
         <h2 class="webtitle">IT Project</h2>
         <nav class="navbar">
             <ul class="menu">
@@ -51,14 +53,35 @@
     </header>
 
         
-    <div class="herosection">
-        <div id="quizsec">
-            <div id="sidebar"><a href="quizme" id="sidebarcont">Quiz Me</a></div>
-            <img src="/icons/arrow-right.png" id="hamburger">
+    <main class="hero-section">
+
+        <div id="sidebarsections">
+
+            <div id="sidebarsection1">
+                <div id="sidebar1"><a href="#about-section" id="sidebarcont1">About Us</a></div>
+                <img src="/icons/arrow-right.png" id="sidebararrow1">
+            </div>
+
+            <div id="sidebarsection2">
+                <div id="sidebar2"><a href="quizme" id="sidebarcont2">Test Me</a></div>
+                <img src="/icons/arrow-right.png" id="sidebararrow2">
+            </div>
+
+            <div id="sidebarsection3">
+                <div id="sidebar3"><a href="quizme" id="sidebarcont3">Hi Me</a></div>
+                <img src="/icons/arrow-right.png" id="sidebararrow3">
+            </div>
+        
         </div>
 
+
+<div class="herotext">
+Test this herotext shit
+</div>
+
+
         <body>
-            <svg viewBox="-50 0 500 458.4" width="250" height="350">
+            <svg viewBox="-50 0 500 458.4" width="350" height="350">
 
                 <defs>
                     <filter id="f1" x="0" y="0" width="200%" height="200%">
@@ -574,20 +597,92 @@
             <script src="script2.js"></script>
         </body>
     
-        <div>
-            <p class="herotext">In the realm of technology, <br> 
-                programming transforms<br> abstract ideas, into <br>
-                functional solutions.<br>
-            </p>
+    </main>
+
+  
+
+    <section id="about-section">
+
+        <h2 id="about-title">
+            Who are we?
+        </h2>
+        
+        <div id="about-wrapper">
+            
+            <div id="about-description">
+                <p>
+                        Three computer enthusiasts, pursuing our Bachelor's degrees in Computer Science at the esteemed Holy Spirit University of Kaslik (USEK). We have distinguished ourselves as dedicated and passionate scholars in the field of computer science. Our academic journey has been marked by a relentless pursuit of knowledge, an unwavering commitment to excellence, and a deep-seated curiosity that has propelled us to explore the intricate realms of this ever-evolving discipline.
+                    <br>
+                    <br>
+                </p>
+                
+                <p>
+                    Our collaboration extends beyond the classroom, where we have undertaken various projects, delving into the realms of software development, artificial intelligence, and cutting-edge technologies.
+                </p>
+                
+            </div>
+             
+            <img id="about-icon" src="/icons/group-user.png">   
+
         </div>
+        <a class="about-button" href="pages/portfolio.html">Check us out</a>
 
-    </div>
+    </section>
 
 
+
+
+
+
+
+		<section id="read-section">
+			<h2 id="read-title">Some Interesting Articles To Read</h2>
+			<div id="articles">
+				<article id="internet" class="hidden">
+					<div>
+						<img class="read-image" src="/icons/internet-infa.jpg" alt="">
+					</div>
+					<div class="read-info">
+						<h3>Internet Infrastructure</h3>
+						<p>
+							What is the Internet? How does it work? How can communication occur between two different ends of the world?
+						</p>
+						<a class="learn" href="pages/infrastructure.html">Learn more &gt;</a>
+					</div>
+				</article>
+
+				<article id="web" class="hidden">
+					<div>
+						<img class="read-image" src="images/history.png" alt="">
+					</div>
+					<div class="read-info">
+						<h3>History of the Web</h3>
+						<p>
+							History of the World Wide Web, the technology that took the world by storm.
+						</p>
+						<a class="learn" href="pages/history.html">Learn more &gt;</a>
+					</div>
+				</article>
+				
+				<article id="statistics" class="hidden">
+					<div>
+						<img class="read-image" src="images/statistics.jpg" alt="">
+					</div>
+					<div class="read-info">
+						<h3>Internet statistics - Middle East and Lebanon</h3>
+						<p>
+							Internet stats in Lebanon and other neighbouring countries. See how much the internet is used in second world countries.
+						</p>
+						<a class="learn" href="">Learn more &gt;</a>
+					</div>
+				</article>
+			</div>
+		</section>
 
         
 
 <script src="script.js"></script>
+
 </body>
 
 </html>
