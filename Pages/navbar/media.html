@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/Styling/styles.css">
+	<link rel="stylesheet" href="/Styling/media-style.css">
+    <title>WEBDEVS</title>
+</head>
+<body>
+	<div class="wave-section">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+
+
+<header class="header-section">
+  <h2 class="webtitle">IT Project</h2>
+  <nav class="navbar">
+      <ul class="menu">
+
+          <li><a href="/Pages/navbar/homepage.html" class="homebtn" id="homebtn">Home</a></li>
+
+      <div class="dropdown">
+          <li><a href="/Pages/navbar/portfolio.html" class="cvbtn">CV's</a>
+              <div class="dropdown-content">
+                  <a href="/Pages/portfolios/cv1.html">CV 1</a>
+                  <a href="/Pages/portfolios/cv2.html">CV 2</a>
+                  <a href="/Pages/portfolios/cv3.html">CV 3</a>
+              </div>
+          </li> 
+      </div> 
+
+          <li><a href="/Pages/navbar/schedule.html" class="schdbtn">Schedule</a>
+
+          <li><a href="/Pages/navbar/media.html" class="rschbtn">Media</a></li>
+
+          <li><a href="/Pages/navbar/arabic.html" class="blgbtn">Arabic Blog</a></li>
+      
+      </ul>    
+  </nav>     
+</header>
+
+	<main>
+		    <div id="slideshow"class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="../images/original-iphone.jpg" style="width:100%; border-radius: 10px;">
+              <div class="text">The first ever iPhone</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="../images/first-phone.jpg" style="width:100%; border-radius: 10px;">
+              <div class="text">The first ever mobile phone</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="../images/z-flip.jpg" style="width:100%; border-radius: 10px;">
+              <div class="text">Galaxy Z Fold 5, a touch screen phone that folds in half</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&larr;</a>
+            <a class="next" onclick="plusSlides(1)">&rarr;</a>
+            
+        </div>
+
+        <div id="video-section">
+          <h2>Evolution of mobile phones</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cueTzJAW1kU?si=FKhvBXlRedTzbapN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div id="gallery-section">
+          <h2>Some phone pics</h2>
+          <div id="imgs-wrapper">
+            <div class="imgs"><img src="../images/iphone13.jpg" alt="iphone13"></div>
+            <div class="imgs"><img src="../images/a54.jpg" alt="Samsung a54"></div>
+            <div class="imgs"><img src="../images/nokia.jpg" alt="Nokia"></div>
+            <div class="imgs"><img src="../images/flip-phone.jpg" alt="Z Flip"></div>
+          </div>
+        </div>
+
+        <div id="audio">
+          <h2>Play Audio For Surprise</h2>
+          <audio controls>
+            <source src="../audio/Wham! - Last Christmas (Official Video).mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+        
+	</main>
+
+	<footer>
+		<p>copyright &copy;2023, All Rights Reserved</p>
+	</footer>
+
+	<a id="return-to-top" href="#">
+		<span class="material-symbols-outlined">
+			arrow_upward
+		</span>
+	</a>
+
+	<script src="https://kit.fontawesome.com/9c8069e5f8.js" crossorigin="anonymous"></script>
+	<script src="../scripts/mainApp.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
