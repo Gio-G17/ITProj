@@ -12,9 +12,9 @@ const sidebarcont3 = document.getElementById('sidebarcont3');
 
 const topButton = document.getElementById('return-to-top');
 
-let menuOpen1 = false;
-let menuOpen2 = false;
-let menuOpen3 = false;
+let menuOpen1 = true;
+let menuOpen2 = true;
+let menuOpen3 = true;
 
 function openMenu1() {
   menuOpen1 = true;
@@ -92,4 +92,16 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 150) {
+    closeMenu1();
+    closeMenu2();
+    closeMenu3();
+  } else {
+    openMenu1();
+    openMenu2();
+    openMenu3();
+  }
+});
 
