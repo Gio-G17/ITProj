@@ -1,22 +1,154 @@
-main{
-    font-family:'Arial' !important;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Arial" !important;
 }
 
-p{
-    text-align: right;
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 3rem;
 }
 
-ol{
-    direction: rtl;
-    text-align: right;
+section {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
-#references ol{
-    direction: ltr;
-    text-align: left;
+#arabic-main {
+  display: flex;
+  flex-direction: column;
 }
 
+p {
+  text-align: right;
+}
 
-#communication ol li{
-    text-align: start;
+ol {
+  direction: rtl;
+  text-align: right;
+}
+
+h2 {
+  color: whitesmoke;
+  margin-top: 3rem;
+}
+
+#definition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#def1,
+#def2 {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 3rem;
+  direction: rtl;
+  text-align: right;
+  line-height: 2rem;
+  height: 10rem;
+  width: 37rem;
+}
+
+#beginning {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#artext1 {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 3rem;
+  direction: rtl;
+  text-align: right;
+  line-height: 2rem;
+  height: 15rem;
+  width: 60rem;
+}
+
+#artext1 img {
+  width: 15rem;
+}
+
+#artext2 {
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 3rem;
+  direction: rtl;
+  text-align: right;
+  line-height: 2rem;
+  height: 30rem;
+  width: 20rem;
+}
+
+#beginning h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#ar-imgs {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#evolution-of-internet,
+#first-comp {
+  width: 30rem;
+}
+
+#communication {
+  background-color: whitesmoke;
+  border-radius: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  text-align: right;
+  line-height: 2rem;
+  padding-right: 2rem;
+}
+
+#communication h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#communication ol li {
+  text-align: start;
+}
+
+#arabic-title {
+  color: whitesmoke;
+  margin-top: 5rem;
+}
+
+#references {
+  margin-top: 5rem;
+  background-color: whitesmoke;
+  opacity: calc(70%);
+}
+
+#references ol {
+  direction: ltr;
+  text-align: left;
+  color: #0d1b2a;
+  padding-left: 2rem;
 }
