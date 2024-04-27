@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/Styling/port-style.css">
-<link rel="stylesheet" href="/Styling/styles.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styling/port-style.css" />
+  <link rel="stylesheet" href="/Styling/styles.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Page Title Here</title>
-</head>
-<body id="port-body">
-
-	<div class="wave-section">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+  </head>
+  <body id="port-body">
+    <div class="wave-section">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
     </div>
 
-
     <header class="header-section">
-        <h2 class="webtitle">IT Project</h2>
-        <nav class="navbar">
-            <ul class="menu">
+      <h2 class="webtitle">IT Project</h2>
+      <nav class="navbar">
+        <ul class="menu">
+          <li>
+            <a href="/Pages/navbar/homepage.html" class="homebtn" id="homebtn"
+              >Home</a
+            >
+          </li>
 
-                <li><a href="/Pages/navbar/homepage.html" class="homebtn" id="homebtn">Home</a></li>
+          <div class="dropdown">
+            <li>
+              <a href="/Pages/navbar/portfolio.html" class="cvbtn">CV's</a>
+              <div class="dropdown-content">
+                <a href="/Pages/portfolios/cv1.html">CV 1</a>
+                <a href="/Pages/portfolios/cv2.html">CV 2</a>
+                <a href="/Pages/portfolios/cv3.html">CV 3</a>
+              </div>
+            </li>
+          </div>
 
-            <div class="dropdown">
-                <li><a href="/Pages/navbar/portfolio.html" class="cvbtn">CV's</a>
-                    <div class="dropdown-content">
-                        <a href="/Pages/portfolios/cv1.html">CV 1</a>
-                        <a href="/Pages/portfolios/cv2.html">CV 2</a>
-                        <a href="/Pages/portfolios/cv3.html">CV 3</a>
-                    </div>
-                </li> 
-            </div> 
+          <li>
+            <a href="/Pages/navbar/schedule.html" class="schdbtn">Schedule</a>
+          </li>
 
-                <li><a href="/Pages/navbar/schedule.html" class="schdbtn">Schedule</a>
+          <li><a href="/Pages/navbar/media.html" class="rschbtn">Media</a></li>
 
-                <li><a href="/Pages/navbar/media.html" class="rschbtn">Media</a></li>
+          <li>
+            <a href="/Pages/navbar/arabic.html" class="blgbtn">Arabic Blog</a>
+          </li>
 
-                <li><a href="/Pages/navbar/arabic.html" class="blgbtn">Arabic Blog</a></li>
-            
-            </ul>    
-        </nav>     
+          <li>
+            <a href="/Pages/navbar/contact.html" class="blgbtn">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-
-	<main>
-        <h1>Check Out our CVs</h1>
-        <div id="profiles">
-            <div class="profile">
-                <a href="../pages/portfolios/cv1.html">
-                    <img src="/icons/cv-images/hs-1.jpg" alt="">
-                    <p>Giorgio Ghantous</p>
-                </a>
-            </div>
-            <div class="profile">
-                <a href="../pages/portfolios/cv2.html">
-                    <img src="/icons/cv-images/hs-2.jpg" alt="">
-                    <p>Rodolphe Khairallah</p>
-                </a>
-            </div>
-			<div class="profile">
-                <a href="../pages/portfolios/cv3.html">
-                    <img src="/icons/cv-images/hs-3.jpg" alt="">
-                    <p>Jeffry Abdallah</p>
-                </a>
-            </div>
+    <main>
+      <h1>Check Out our CVs</h1>
+      <div id="profiles">
+        <div class="profile">
+          <a href="/Pages/portfolios/cv1.html">
+            <img src="/icons/cv-images/hs-1.jpg" alt="" />
+            <p>Giorgio Ghantous</p>
+          </a>
         </div>
-		
-	</main>
+        <div class="profile">
+          <a href="/Pages/portfolios/cv2.html">
+            <img src="/icons/cv-images/hs-2.jpg" alt="" />
+            <p>Rodolphe Khairallah</p>
+          </a>
+        </div>
+        <div class="profile">
+          <a href="/Pages/portfolios/cv3.html">
+            <img src="/icons/cv-images/hs-3.jpg" alt="" />
+            <p>Jeffry Abdallah</p>
+          </a>
+        </div>
+      </div>
+    </main>
 
-	<footer>
-		copyright &copy;2023, All Rights Reserved
-	</footer>
-
-	<a id="return-to-top" href="#">
-		<span class="material-symbols-outlined">
-			arrow_upward
-		</span>
-	</a>
-
-	<script src="https://kit.fontawesome.com/9c8069e5f8.js" crossorigin="anonymous"></script>
-	<script src="../scripts/mainApp.js"></script>
-</body>
+    <footer>copyright &copy;2023, All Rights Reserved</footer>
+  </body>
 </html>
