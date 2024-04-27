@@ -1,98 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../styles/main-style.css">
-	<link rel="stylesheet" href="../styles/articles-pages.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <title>WEBDEVS</title>
-</head>
-<body>
-	<div id="overlay"></div>
-    <header>
-		<div id="head-title">WEBDEVS</div>
-		<nav class="nav-links" id="main-nav-links">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/arabic.html">Arabic Blog</a></li>
-				<li><a href="../pages/portfolio.html">Portfolio</a></li>
-				<li><a href="../pages/schedule.html">Schedule</a></li>
-                <li><a href="../pages/quiz.html">Quiz 1</a></li>
-				<li><a href="../pages/quiz2.html">Quiz 2</a></li>
-				<li><a href="../pages/media.html">Media</a></li>
-				<li><a href="../pages/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<a id="menu-icon" href="javascript:void(0);">
-			<span  class="material-symbols-outlined">
-				menu
-			</span>
-		</a>
-	</header>
-	<div id="hidden-menu" class="ham-menu-closed">
-		<nav class="nav-links" id="menu-nav-links">
-			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../pages/arabic.html">Arabic Blog</a></li>
-				<li><a href="../pages/portfolio.html">Portfolio</a></li>
-				<li><a href="../pages/schedule.html">Schedule</a></li>
-                <li><a href="../pages/quiz.html">Quiz 1</a></li>
-				<li><a href="../pages/quiz2.html">Quiz 2</a></li>
-				<li><a href="../pages/media.html">Media</a></li>
-				<li><a href="../pages/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-	</div>
-	<button id="side-button" onclick="toggle_sidebar()"><i class="fa-solid fa-chevron-right"></i></button>
-	<div class="sidebar sidebar-close">
-		<ul>
-			<li><a href="#definition">What is WWW</a></li>
-			<li><a href="#beginning">How it began</a></li>
-			<li><a href="#references">References</a></li>
-			<li id="back-home"><a href="../index.html#read-section">Back Home</a></li>
-		</ul>
-	</div>
-	<main>
-		<h1>History of the Web</h1>
-		<article class="change-back" id="definition">
-			<h2>What is the World Wide Web</h2>
-			<p>The World Wide Web (WWW), commonly known as the Web, is “a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents.”</p>
-			<p>Though most everyday users wrongly assume that the WWW and the Internet are the same, they are actually very different. Unlike the WWW, which was developed much later in the 1980s, the Internet began as a means for government researchers to share information in the 1960s.</p>
-		</article>
-		<article id="beginning">
-			<h2>How it all Began</h2>
-			<p>The WWW was first conceptualized in 1946 when Murray Leinster wrote a short story in which he imagined that there would be computers in every home, each with access to a central device from which they could retrieve information. The story does capture the idea of a vast information network accessible to everyone in their homes, despite having some differences from how the Web operates today.</p>
-			<p>The execution of the WWW as a concept didn't emerge until around 40 years later. It was in the year 1980 when Tim Berners-Lee, the inventor of WWW, worked on a project known as ENQUIRE. This project required Lee to share information with his peers worldwide, and he found no other easy or quick way. Consequently, he put together a proposal for a centralized database containing links to other documents in 1989. Despite this being the ideal solution for Lee and his colleagues, nobody was interested in it, and nobody paid attention—except his boss at the time, Mike Sendall. Though Lee's initial proposal was not immediately accepted, and Sendall wrote “vague but exciting” on its cover, he supported Lee by giving him time and encouraged him to implement the new system in their next project. The World Wide Web was the only name that stuck after several other suggestions.</p>
-			<figure>
-				<img src="../images/tim.jpg" alt="Tim Berners-Lee">
-			</figure>
-			<p id="caption">A picture of Tim Berners-Lee, the creator of the World Wide Web.</p>
-			<p>By December 1990, Lee had teamed up with another physicist named Robert Cailliau and had revised his initial idea.3 They had the idea to create web pages by fusing hypertext with the internet, but no one at the time realized how successful this concept could be. Lee persisted in creating the first web browser, HTTP, HTML, and HTML, despite all odds. The WWW project was introduced to the public on June 8, 1991, and the first web page was published online on August 6 of that same year.</p>
-			<p>We can now share information with anyone, anywhere in the world, thanks to the creation of the WWW. It began with the fundamentals of sharing a document, but it has since developed into tools that enable us to enhance and improve our lives. The world can access the web for free thanks to Tim Berners-Lee, who created it as an open-source project.6 As a result, the business and employment worlds are developing simultaneously as the new internet generation is rapidly taking off. More and more people are eager to pursue brand-new career opportunities in today's society, and many are honing their technological skills. All of this was pioneered by Tim Berners Lee!</p>
-		</article>
-		<section id="references">
-			<h3>References:</h3>
-			<ol>
-				<li>The World Wide Web project. (n.d.). Retrieved September 5, 2022, from <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">http://info.cern.ch/hypertext/WWW/TheProject.html</a></li>
-				<li>Difference between Internet and WWW - GeeksforGeeks. (n.d.). Retrieved September 5, 2022, from <a href="https://www.geeksforgeeks.org/difference-between-internet-and-www/" target="_blank">https://www.geeksforgeeks.org/difference-between-internet-and-www/</a></li>
-				<li>History of the World Wide Web | Computer Science | 2878 | p2k.unaki.ac.id. (n.d.). Retrieved September 5, 2022, from <a href="http://p2k.unaki.ac.id/IT/en/2878-2775/History-of-the-World-Wide-Web_19254_p2k-unaki.html" target="_blank">http://p2k.unaki.ac.id/IT/en/2878-2775/History-of-the-World-Wide-Web_19254_p2k-unaki.html</a></li>
-				<li>Brief History of the Web <a href="https://www.byjusfutureschool.com/blog/the-world-wide-web-a-brief-history/" target="_blank">https://www.byjusfutureschool.com/blog/the-world-wide-web-a-brief-history/</a></li>
-			</ol>
-		</section>
-	</main>
+  <link rel="stylesheet" href="/Styling/styles.css" />
+  <link rel="stylesheet" href="/Styling/sub-pgs-syles/articles-pages.css" />
 
-	<footer>
-		copyright &copy;2023, All Rights Reserved
-	</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Page Title Here</title>
+  </head>
 
-	<a id="return-to-top" href="#">
-		<span class="material-symbols-outlined">
-			arrow_upward
-		</span>
-	</a>
+  <body class="home-body">
+    <div class="wave-section">
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
 
-	<script src="https://kit.fontawesome.com/9c8069e5f8.js" crossorigin="anonymous"></script>
-	<script src="../scripts/mainApp.js"></script>
-</body>
+    <header class="header-section">
+      <h2 class="webtitle">IT Project</h2>
+      <nav class="navbar">
+        <ul class="menu">
+          <li>
+            <a href="/Pages/navbar/homepage.html" class="homebtn" id="homebtn"
+              >Home</a
+            >
+          </li>
+
+          <div class="dropdown">
+            <li>
+              <a href="/Pages/navbar/portfolio.html" class="cvbtn">CV's</a>
+              <div class="dropdown-content">
+                <a href="/Pages/portfolios/cv1.html">CV 1</a>
+                <a href="/Pages/portfolios/cv2.html">CV 2</a>
+                <a href="/Pages/portfolios/cv3.html">CV 3</a>
+              </div>
+            </li>
+          </div>
+
+          <li>
+            <a href="/Pages/navbar/schedule.html" class="schdbtn">Schedule</a>
+          </li>
+
+          <li><a href="/Pages/navbar/media.html" class="rschbtn">Media</a></li>
+
+          <li>
+            <a href="/Pages/navbar/arabic.html" class="blgbtn">Arabic Blog</a>
+          </li>
+
+          <li>
+            <a href="/Pages/navbar/contact.html" class="blgbtn">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="maininfo">
+      <div id="hero-section">
+        <div id="sidebarsections">
+          <div id="sidebarsection1">
+            <div id="sidebar1">
+              <a href="#definition" id="sidebarcont1">History</a>
+            </div>
+            <img src="/icons/arrow-right.png" id="sidebararrow1" />
+          </div>
+
+          <div id="sidebarsection2">
+            <div id="sidebar2">
+              <a href="#beginning" id="sidebarcont2">Beginning </a>
+            </div>
+            <img src="/icons/arrow-right.png" id="sidebararrow2" />
+          </div>
+
+          <div id="sidebarsection3">
+            <div id="sidebar3">
+              <a href="#references" id="sidebarcont3">References</a>
+            </div>
+            <img src="/icons/arrow-right.png" id="sidebararrow3" />
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <h1 id="hist-title">History of the Web</h1>
+        <article class="change-back" id="definition">
+          <h2>What is the World Wide Web</h2>
+          <p>
+            The World Wide Web (WWW), commonly known as the Web, is “a wide-area
+            hypermedia information retrieval initiative aiming to give universal
+            access to a large universe of documents.”
+          </p>
+          <p>
+            Though most everyday users wrongly assume that the WWW and the
+            Internet are the same, they are actually very different. Unlike the
+            WWW, which was developed much later in the 1980s, the Internet began
+            as a means for government researchers to share information in the
+            1960s.
+          </p>
+        </article>
+        <article id="beginning">
+          <h2>How it all Began <br /><br /></h2>
+          <p>
+            The WWW was first conceptualized in 1946 when Murray Leinster wrote
+            a short story in which he imagined that there would be computers in
+            every home, each with access to a central device from which they
+            could retrieve information. The story does capture the idea of a
+            vast information network accessible to everyone in their homes,
+            despite having some differences from how the Web operates today.
+          </p>
+          <p>
+            The execution of the WWW as a concept didn't emerge until around 40
+            years later. It was in the year 1980 when Tim Berners-Lee, the
+            inventor of WWW, worked on a project known as ENQUIRE. This project
+            required Lee to share information with his peers worldwide, and he
+            found no other easy or quick way. Consequently, he put together a
+            proposal for a centralized database containing links to other
+            documents in 1989. Despite this being the ideal solution for Lee and
+            his colleagues, nobody was interested in it, and nobody paid
+            attention—except his boss at the time, Mike Sendall. Though Lee's
+            initial proposal was not immediately accepted, and Sendall wrote
+            “vague but exciting” on its cover, he supported Lee by giving him
+            time and encouraged him to implement the new system in their next
+            project. The World Wide Web was the only name that stuck after
+            several other suggestions.<br /><br />
+          </p>
+          <figure>
+            <img src="/icons/images/hist-of-web.webp" alt="Tim Berners-Lee" />
+          </figure>
+          <p id="caption">
+            A picture of Tim Berners-Lee, the creator of the World Wide Web.
+          </p>
+          <p>
+            <br /><br />
+            By December 1990, Lee had teamed up with another physicist named
+            Robert Cailliau and had revised his initial idea.3 They had the idea
+            to create web pages by fusing hypertext with the internet, but no
+            one at the time realized how successful this concept could be. Lee
+            persisted in creating the first web browser, HTTP, HTML, and HTML,
+            despite all odds. The WWW project was introduced to the public on
+            June 8, 1991, and the first web page was published online on August
+            6 of that same year.
+          </p>
+          <p>
+            We can now share information with anyone, anywhere in the world,
+            thanks to the creation of the WWW. It began with the fundamentals of
+            sharing a document, but it has since developed into tools that
+            enable us to enhance and improve our lives. The world can access the
+            web for free thanks to Tim Berners-Lee, who created it as an
+            open-source project.6 As a result, the business and employment
+            worlds are developing simultaneously as the new internet generation
+            is rapidly taking off. More and more people are eager to pursue
+            brand-new career opportunities in today's society, and many are
+            honing their technological skills. All of this was pioneered by Tim
+            Berners Lee!
+          </p>
+        </article>
+        <section id="references">
+          <h3>References:</h3>
+          <ol>
+            <li>
+              The World Wide Web project. (n.d.). Retrieved September 5, 2022,
+              from
+              <a
+                href="http://info.cern.ch/hypertext/WWW/TheProject.html"
+                target="_blank"
+                >http://info.cern.ch/hypertext/WWW/TheProject.html</a
+              >
+            </li>
+            <li>
+              Difference between Internet and WWW - GeeksforGeeks. (n.d.).
+              Retrieved September 5, 2022, from
+              <a
+                href="https://www.geeksforgeeks.org/difference-between-internet-and-www/"
+                target="_blank"
+                >https://www.geeksforgeeks.org/difference-between-internet-and-www/</a
+              >
+            </li>
+            <li>
+              History of the World Wide Web | Computer Science | 2878 |
+              p2k.unaki.ac.id. (n.d.). Retrieved September 5, 2022, from
+              <a
+                href="http://p2k.unaki.ac.id/IT/en/2878-2775/History-of-the-World-Wide-Web_19254_p2k-unaki.html"
+                target="_blank"
+                >http://p2k.unaki.ac.id/IT/en/2878-2775/History-of-the-World-Wide-Web_19254_p2k-unaki.html</a
+              >
+            </li>
+            <li>
+              Brief History of the Web
+              <a
+                href="https://www.byjusfutureschool.com/blog/the-world-wide-web-a-brief-history/"
+                target="_blank"
+                >https://www.byjusfutureschool.com/blog/the-world-wide-web-a-brief-history/</a
+              >
+            </li>
+          </ol>
+        </section>
+
+        <a href="#">
+          <img src="/icons/arrow-up.png" id="return-to-top" />
+        </a>
+        <footer>
+          <p>copyright &copy;2023, All Rights Reserved</p>
+        </footer>
+      </main>
+    </div>
+
+    <script src="/Script/homepagescript.js"></script>
+  </body>
 </html>
